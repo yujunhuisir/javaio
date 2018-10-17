@@ -38,7 +38,9 @@ public class Directory {
 				dirs.add(file);
 			}
 		}
-		
+		public String toString() {
+			return "dirs:" +PPrint.pformat(dirs) +"\n\nfiles:"+PPrint.pformat(files);
+		}
 		public static TreeInfo walk(File start,String regex) {
 			return recurseDirs(start,regex);
 		}

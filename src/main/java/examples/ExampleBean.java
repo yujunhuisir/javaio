@@ -29,6 +29,7 @@ public class ExampleBean {
 	    	System.out.println("aaaaaaaaaaaaa");
 	    	beanOne.ffuucckk();
 	    	System.out.println(i);
+	    	beanTwo.kkccuucc();
 	    }
 	    
 	  
