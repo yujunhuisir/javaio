@@ -12,7 +12,6 @@ public class Directory {
 		return dir.listFiles(new FilenameFilter() {
 			private Pattern pattern = Pattern.compile(regex);
 			public boolean accept(File dir, String name) {
-				// TODO Auto-generated method stub
 				return pattern.matcher(new File(name).getName()).matches();
 			}
 			
@@ -41,6 +40,7 @@ public class Directory {
 		public String toString() {
 			return "dirs:" +PPrint.pformat(dirs) +"\n\nfiles:"+PPrint.pformat(files);
 		}
+	}
 		public static TreeInfo walk(File start,String regex) {
 			return recurseDirs(start,regex);
 		}
@@ -72,9 +72,6 @@ public class Directory {
 					System.out.println(walk(arg));
 					
 		
-		}
-		
-	}
-	
+		}	
 	
 }
